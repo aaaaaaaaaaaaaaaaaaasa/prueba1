@@ -128,6 +128,8 @@ a{
     background-color: #b9e6ff;
     text-align: center;
     align-items: center;
+    padding-top:20px;
+    padding-bottom: 20px;
     margin-bottom: 20px;
     border-end-end-radius: 25px;
     border-end-start-radius: 25px;
@@ -141,7 +143,7 @@ a{
     color: #b9e6ff;
 }
 #producto>img{
-        border-start-end-radius: 25px;
+    border-start-end-radius: 25px;
     border-start-start-radius: 25px;
     border-end-end-radius: 25px;
     border-end-start-radius: 25px;
