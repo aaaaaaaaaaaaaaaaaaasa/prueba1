@@ -27,10 +27,6 @@
     padding: 35px 0 35px 0;
     width: 50%;
     text-align: center;
-    border-start-end-radius: 50px;
-    border-start-start-radius: 50px;
-    border-end-end-radius: 50px;
-    border-end-start-radius: 50px;
 }
 a{
     padding: 38px 0 38px 0;
@@ -55,12 +51,7 @@ a{
     height: auto;
     max-height: 600px;
     }
-.carousel-item>img{
-    border-start-end-radius: 50px;
-    border-start-start-radius: 50px;
-    border-end-end-radius: 50px;
-    border-end-start-radius: 50px;
-}
+
 
 @media only screen and (max-width:800px) {
     /* For tablets: */
@@ -111,8 +102,6 @@ a{
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
-    border-start-end-radius: 25px;
-    border-start-start-radius: 25px;
 }
 #contenido > p {
     color: #b9e6ff;
@@ -130,8 +119,6 @@ a{
     align-items: center;
     padding-top:20px;
     padding-bottom: 20px;
-    border-end-end-radius: 25px;
-    border-end-start-radius: 25px;
     padding-left: 50px;
     padding-right: 50px;
 }

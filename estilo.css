@@ -10,10 +10,7 @@
     background-color: #b9e6ff;
     align-items: center;
 }
-#contenido{
-    background-image: url(./images/fondo_pagina.jpg);
-    background-size: cover;
-}
+
 .menu{
     width: 40%;
     display: flex;
@@ -41,9 +38,7 @@ a{
     font-size: 1.2rem;
 }
 
-.menu > a:hover{
-    background-color: #EB9682;
-}
+
 .logo{
     display: flex;
     align-items: center;
@@ -51,23 +46,15 @@ a{
     padding-left: 50px;
     
 }
-#auto{
-    display: flex;
-    justify-content: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-
-}
-
 
 #input{
     width: 50%;
     background-color: #b9e6ff;
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
     border-start-end-radius: 40px;
     border-start-start-radius: 40px;
     border-end-end-radius: 40px;
