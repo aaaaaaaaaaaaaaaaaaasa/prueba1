@@ -28,47 +28,52 @@
             <a href="sub.html"><img src="images/sub.png" alt="suscribirse"></a>
         </div>
     </div>
+    <div id="fondo">
     <div id="contenido">
-
-        <div id="Iniciar_sesion">
-            <div id="input">
-                <h1>Iniciar Sesion</h1>
-                <p> </p>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Usuario</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default">
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Iniciar sesión</legend>
+                <div class="mb-3">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuario" class="form-control"
+                        required>
                 </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Contraseña</span>
-                    <input type="password" class="form-control" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default">
+                <div class="mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email@gmail.com" class="form-control"
+                        required>
                 </div>
-                <a class="btn btn-outline-dark" href="index.html" role="button">Iniciar Sesion</a>
-                <br>
-                <a class="btn btn-primary" href="registro.html" role="button">Registrarse</a>
-            </div>
-        </div>
-        <footer>
-            <div class="contenedor-footer">
-              <div class="content-foo">
-                <h4>Teléfonos Contacto</h4>
+                <div class="mb-3">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" class="form-control"
+                        required>
+                </div>
+                <button type="submit" class="btn btn-outline-primary">Enviar</button>
+                <button type="reset" class="btn btn-outline-danger">Limpiar</button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Contacto</h4>
                 <p>+569 999 9999</p>
                 <p>+562 9999 9999</p>
-              </div>
-              <div class="content-foo">
+            </div>
+            <div class="content-foo">
                 <h4>Email</h4>
                 <p>compranos@gmail.com</p>
                 <p>alimentobarato@gmail.com</p>
-              </div>
-              <div class="content-foo">
+            </div>
+            <div class="content-foo">
                 <h4>Dirección</h4>
                 <p>Melipilla, Region Metropolitana, Chile.</p>
                 <p>Calle siempre muerto 666.</p>
-              </div>
-        
             </div>
-          </footer>
+
+        </div>
+    </footer>
 </body>
 
 </html>

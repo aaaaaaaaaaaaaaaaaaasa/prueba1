@@ -7,7 +7,7 @@
 #header{
     display: flex;
     justify-content: space-between;
-    background-color: #b9e6ff;
+    background-color: #000000;
     align-items: center;
 
 }
@@ -52,23 +52,6 @@ a{
     max-height: 600px;
     }
 
-
-@media only screen and (max-width:800px) {
-    /* For tablets: */
-    .main {
-      width: 80%;
-      padding: 0;
-    }
-    .right {
-      width: 100%;
-    }
-  }
-  @media only screen and (max-width:500px) {
-    /* For mobile phones: */
-    .menu, .main, .right {
-      width: 100%;
-    }
-  }
   #historial{
       display: flex;
     flex-direction: row-reverse;
@@ -94,14 +77,15 @@ a{
 }
  
 #contenido{
-    justify-content: space-between;
     display: flex;
     background-color: #b9e6ff;
     text-align: center;
-    align-items: center;
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 #contenido > p {
     color: #b9e6ff;
@@ -110,29 +94,12 @@ a{
     color: #b9e6ff;
 }
 
-
-#contenido2{
-    justify-content: space-between;
-    display: flex;
-    background-color: #b9e6ff;
-    text-align: center;
-    align-items: center;
-    padding-top:20px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-#contenido2 > p {
-    color: #b9e6ff;
-}
-#contenido2 > h5{
-    color: #b9e6ff;
-}
 #producto>img{
     border-start-end-radius: 25px;
     border-start-start-radius: 25px;
     border-end-end-radius: 25px;
     border-end-start-radius: 25px;
+    padding: 10px;
 }
 footer {
     background: #000000;
@@ -159,4 +126,20 @@ footer {
 }
 .content-foo p{
     color: rgb(252, 247, 247);
+}
+@media (max-width: 600px) {
+    #header{
+        background-color: #000000;
+        flex-direction: column;
+        display: flex;
+    }
+    .logo>h2{
+        visibility: hidden;
+    }
+    .logo{
+        padding-left: 100px;
+    }
+    .menu {
+        width: 100%;
+      }
 }
