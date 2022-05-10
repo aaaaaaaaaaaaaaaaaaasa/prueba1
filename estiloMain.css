@@ -57,7 +57,7 @@ a{
     }
 
   #historial{
-      display: flex;
+    display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
     justify-content: space-between;
@@ -129,7 +129,7 @@ footer {
     margin-bottom: 10px;
 }
 .content-foo p{
-    color: rgb(252, 247, 247);
+    color: rgb(255, 255, 255);
 }
 @media (max-width: 600px) {
     #header{
@@ -146,4 +146,7 @@ footer {
     .menu {
         width: 100%;
       }
+    .carousel-item{    
+        max-height: 262px;
+    }
 }
