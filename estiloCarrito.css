@@ -127,7 +127,7 @@ footer {
 .content-foo p{
     color: rgb(252, 247, 247);
 }
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     #header{
         background-color: #000000;
         flex-direction: column;

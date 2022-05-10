@@ -53,7 +53,8 @@ a{
 
 .carousel-item{
     height: auto;
-    max-height: 600px;
+    max-height: 400px;
+    
     }
 
   #historial{
@@ -131,7 +132,7 @@ footer {
 .content-foo p{
     color: rgb(255, 255, 255);
 }
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     #header{
         background-color: #000000;
         flex-direction: column;
