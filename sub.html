@@ -2,6 +2,8 @@
 <html lang="es">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +20,7 @@
     <div id="header">
         <div class="logo">
             <img src="images/LOGO.png" alt="logo">
-            <h2>wenapo</h2>
+            <h2></h2>
         </div>
         <div class="menu">
             <a href="index.html"><img src="images/home.png" alt="INICIO"></a>
@@ -26,27 +28,57 @@
             <a href="carrito.html"><img src="images/cart.png" alt="CARRITO"></a>
             <a href="login.html"><img src="images/user.png" alt="LOGIN"></a>
             <a href="sub.html"><img src="images/sub.png" alt="suscribirse"></a>
-            <a href="crud.html"><img src="images/stock.png" alt="STOCK"></a>        
+            <a href="crud.html"><img src="images/stock.png" alt="STOCK"></a>
             <a href="https://www.correos.cl/seguimiento-en-linea"><img src="images/delivery.png" alt=""></a>
         </div>
     </div>
     <div id="fondo">
-    <div id="contenido">
-        <form action="#" method="get">
-            <fieldset>
-                <legend>Subscribirse</legend>
-                <p>Al suscribirse obtendra un 10% de descuento en lo producto</p>
-                <div class="mb-3">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email@gmail.com" class="form-control"
-                        required>
+        <div id="contenido">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="shadow-lg p-3 mb-5 mt-4 bg-body rounded">
+                            <div class="p-3 mb-2 bg-primary bg-gradient fw-bold text-white">Suscribirse!</div>
+                            <form class="row g-3 needs-validation" novalidate>
+                                <div class="col-md-4">
+                                    <label for="Correo" class="form-label">Correo</label>
+                                    <input type="email" class="form-control" id="Correo" placeholder="juanito@gmail.com"
+                                        required>
+                                    <div class="valid-feedback">¡Campo válido!</div>
+                                    <div class="invalid-feedback">Debe completar los datos.</div>
+                                </div>
+
+
+                                <button class="btn btn-warning fw-bold" type="submit">Suscribirse</button>
+                                <button class="btn btn-warning fw-bold" type="submit">Desuscribirse</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-outline-primary">Suscribir</button>
-                <button type="reset" class="btn btn-outline-danger">Desuscribir</button>
-            </fieldset>
-        </form>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+            <script>
+                (function () {
+                    'use strict'
+                    var forms = document.querySelectorAll('.needs-validation')
+                    Array.prototype.slice.call(forms)
+                        .forEach(function (form) {
+                            form.addEventListener('submit', function (event) {
+                                if (!form.checkValidity()) {
+                                    event.preventDefault()
+                                    event.stopPropagation()
+                                } else {
+                                }
+                                form.classList.add('was-validated')
+                            }, false)
+                        })
+                })()
+            </script>
+        </div>
     </div>
-</div>
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">

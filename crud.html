@@ -2,6 +2,8 @@
 <html lang="es">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +20,7 @@
     <div id="header">
         <div class="logo">
             <img src="images/LOGO.png" alt="logo">
-            <h2>wenapo</h2>
+            <h2></h2>
         </div>
         <div class="menu">
             <a href="index.html"><img src="images/home.png" alt="INICIO"></a>
@@ -31,42 +33,90 @@
         </div>
     </div>
     <div id="fondo">
-    <div id="contenido">
-        <form action="#" method="get">
-            <fieldset>
-                <legend>Stock manager</legend>
-                <div class="mb-3">
-                    <label for="Id Producto">Id Producto</label>
-                    <input type="text" id="producto" name="producto" placeholder="Nombre Producto" class="form-control"
-                        required>
+        <div id="contenido">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="shadow-lg p-3 mb-5 mt-4 bg-body rounded">
+                            <div class="p-3 mb-2 bg-primary bg-gradient fw-bold text-white">STOCK MANAGER</div>
+                            <form class="row g-3 needs-validation" novalidate>
+
+                                <div class="col-md-4">
+                                    <label for="Producto" class="form-label">Producto</label>
+                                    <input type="text" class="form-control" id="Producto" placeholder="Nombre Producto"
+                                        required>
+                                    <div class="valid-feedback">¡Campo válido!</div>
+                                    <div class="invalid-feedback">Debe completar los datos.</div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="Valor" class="form-label">Valor</label>
+                                    <input type="number" class="form-control" id="Valor" placeholder="$9.999" required>
+                                    <div class="valid-feedback">¡Campo válido!</div>
+                                    <div class="invalid-feedback">Debe completar los datos.</div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="Stock" class="form-label">Stock</label>
+                                    <input type="number" class="form-control" id="Stock" placeholder="50" required>
+                                    <div class="valid-feedback">¡Campo válido!</div>
+                                    <div class="invalid-feedback">Debe completar los datos.</div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="Imagen" class="form-label">Imagen</label>
+                                    <input type="file" class="form-control" id="Imagen" placeholder="50" required>
+                                    <div class="valid-feedback">¡Campo válido!</div>
+                                    <div class="invalid-feedback">Debe completar los datos.</div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <label for="pais" class="form-label">Tipo Mascota</label>
+                                    <select class="form-select" id="pais" required>
+                                        <option selected disabled value="">Seleccione...</option>
+                                        <option>Perro</option>
+                                        <option>Gato</option>
+                                    </select>
+                                    <div class="valid-feedback">¡Campo válido!</div>
+                                    <div class="invalid-feedback">Debe completar los datos.</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Descripción</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <button class="btn btn-warning fw-bold" type="submit">Agregar</button>
+                                <button class="btn btn-warning fw-bold" type="submit">Actualizar</button>
+                                <button class="btn btn-warning fw-bold" type="submit">Eliminar</button>
+
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="Valor Producto">Valor Producto</label>
-                    <input type="number" id="valor" name="Valor" placeholder="$99.999" class="form-control"
-                        required>
-                </div>
-                <div class="mb-3">
-                    <label for="Stock Producto">Stock Producto</label>
-                    <input type="number" id="Stock" name="Stock" placeholder="50" class="form-control"
-                        required>
-                </div>
-                <div class="mb-3">
-                    <label for="Imagen Producto">Imagen Producto</label>
-                    <input type="file" id="Imagen" name="Imagen" placeholder="" class="form-control"
-                        required>
-                </div>
-                <button type="submit" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Agregar Producto
-                </button>
-                <button type="reset" class="btn btn-outline-danger">Limpiar Formulario</button>                         
-                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModa2">
-                    Eliminar Producto
-                </button>
-            </fieldset>
-            
-        </form>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+            <script>
+                (function () {
+                    'use strict'
+                    var forms = document.querySelectorAll('.needs-validation')
+                    Array.prototype.slice.call(forms)
+                        .forEach(function (form) {
+                            form.addEventListener('submit', function (event) {
+                                if (!form.checkValidity()) {
+                                    event.preventDefault()
+                                    event.stopPropagation()
+                                } else {
+                                }
+                                form.classList.add('was-validated')
+                            }, false)
+                        })
+                })()
+            </script>
+        </div>
     </div>
-</div>
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
@@ -89,41 +139,6 @@
     </footer>
 </body>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-aria-hidden="true">
-<div class="modal-dialog">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">Exito!</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-      !Producto Agregado¡
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-    </div>
-  </div>
-</div>
-</div>
 
-
-<div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel"
-aria-hidden="true">
-<div class="modal-dialog">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">Exito!</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-      !Producto Eliminado¡
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-    </div>
-  </div>
-</div>
-</div>
 
 </html>
