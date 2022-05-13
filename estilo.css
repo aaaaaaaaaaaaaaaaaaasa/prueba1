@@ -101,4 +101,7 @@ footer {
     .menu {
         width: 100%;
       }
+      #contenido{
+        min-width: 410px;
+      }  
 }
